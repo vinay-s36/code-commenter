@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ReactMarkdown from "react-markdown";
 
 function CodeCommenter() {
   const [code, setCode] = useState('');
@@ -82,9 +83,9 @@ function CodeCommenter() {
                 {copyText}
               </button>
             </div>
-            <pre className="w-full h-64 p-4 border rounded overflow-auto bg-gray-50 font-mono whitespace-pre-wrap">
-              {commentedCode}
-            </pre>
+            <div className="w-full h-64 p-4 border rounded overflow-auto bg-gray-50 font-mono">
+              <ReactMarkdown className="whitespace-pre-wrap">{commentedCode}</ReactMarkdown>
+            </div>
           </div>
         )}
       </div>
