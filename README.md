@@ -25,10 +25,16 @@ Ensure you have the following installed on your machine:
 1. Visit [Google Gemini API Key Documentation](https://ai.google.dev/gemini-api/docs/api-key).
 2. Follow the steps provided to generate your API key.
 3. Once obtained, store the API key in a `.env` file in the `backend` folder:
+
    ```
    API_KEY=your_api_key_here
    ```
 
+## Clone the Repository
+```bash
+git clone https://github.com/vinay-s36/code-commenter.git
+cd code-commenter
+```
 ---
 
 ## Installation
