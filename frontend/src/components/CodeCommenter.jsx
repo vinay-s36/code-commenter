@@ -12,7 +12,7 @@ function CodeCommenter() {
     setLoading(true);
     setError('');
     try {
-      const response = await fetch('http://127.0.0.1:5000/code-comments', {
+      const response = await fetch('https://vinay369.pythonanywhere.com/code-comments', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
